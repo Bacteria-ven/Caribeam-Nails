@@ -1,0 +1,87 @@
+:root{
+    --primario1:#5f0f0f;
+    --primario2:#cb9b51;
+    --primario3:#d2b26a;
+    --primario4:#f6e27a;
+    --primario5:#fff23e; 
+    --negro:#000000;
+    --blanco:#ffffff;
+    --fuente-principal:"tangerine",cursive; 
+    --fuente-secundaria:"monserrat",arial;      
+}
+
+html{
+    background-color: black;
+    font-family: var(--fuente-principal, monserrat,arial);
+    text-align: center;
+    color:#ffffff
+
+}
+/* Navegacion*/
+.navegacion{
+    display: flex;
+    justify-content:space-evenly;
+    font-family: var(--fuente-secundaria);
+    font-weight: 600;
+    font-size: 2rem;
+    padding: 1rem;
+    
+}
+
+a{
+    text-decoration: none;
+    color:#ffffff;
+    padding: 1rem;
+}
+
+.navegacion a:hover{
+    color: #000000;
+    text-decoration: none;
+    background: linear-gradient(#AC8152,#cb9b51,#d2b26a,#f6e27a);
+    border-radius: 2rem;
+
+}
+/* Textos*/
+
+h1, h2{
+    font-size: 7rem;
+    color: #cb9b51;
+}
+
+/* imagenes*/
+ section img{
+height: 300px;
+width: 300px;
+border-color: #cb9b51;
+padding: 3rem 3rem;
+box-shadow:1rem 1rem 3rem #cb9b51;
+
+}
+.logo{
+    width: 500px;
+    height: 500px;
+    margin-top: 5rem;
+}
+
+/*Contacto*/
+.contacto{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    font-family: var(--fuente-principal), monserrat;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+}
+.redes_sociales{
+    display: flex;
+    box-sizing: border-box;
+    width: 150px;
+    height: 150px;
+}
+
+/* Footer*/
+footer{
+    text-align: center;
+    font-family: var(--fuente-secundaria);
+    font-size: 1.5rem;
+}

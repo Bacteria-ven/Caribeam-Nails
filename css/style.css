@@ -1,0 +1,133 @@
+:root{
+    --primario1:#5f0f0f;
+    --primario2:#cb9b51;
+    --primario3:#d2b26a;
+    --primario4:#f6e27a;
+    --primario5:#fff23e; 
+    --negro:#000000;
+    --blanco:#ffffff;
+    --fuente-principal:"tangerine",cursive; 
+    --fuente-secundaria:"monserrat",arial;      
+}
+
+body{
+    background-color: #000000;
+    color: #ffffff;
+}
+/*textos*/
+h1{
+    font-family: var(--fuente-principal);
+    padding: 1rem;
+    text-align: center;
+    margin: 0;
+    color: #AC8152;
+    font-size: 7.5rem;
+ 
+}
+h2{
+    font-family: var(--fuente-principal);
+    font-size: 7rem;
+    text-align: center;
+    color: #AC8152;
+}
+/*navegacion*/
+.navegacion{
+    display: flex;
+    justify-content:space-around;
+    font-family: var(--fuente-secundaria);
+    font-weight: 600;
+    font-size: 2rem;
+    padding: 1rem;
+    
+}
+
+a{
+    text-decoration: none;
+    color:#ffffff;
+    padding: 1rem;
+}
+
+.navegacion a:hover{
+    color: #000000;
+    text-decoration: none;
+    background: linear-gradient(#AC8152,#cb9b51,#d2b26a,#f6e27a);
+    border-radius: 2rem;
+
+}
+.logo{
+    display:flex;
+    box-sizing: border-box;
+    width: 40rem;
+    height: 40rem;
+    margin-top: 14rem;
+    margin-left: 5rem;
+    
+}
+.contenedor{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+    
+.contenedor_1{
+    font-family: var(--fuente-secundaria);
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    margin-right: 4rem;
+    margin-left: 3rem;
+    color: #ffffff;
+    width: 800px;
+    height: 600px;
+    
+    
+}
+.titulo{
+    text-align: center;
+}
+/* imagenes*/
+section{
+    display: flex;
+    width: 800px;
+    height: 630px;
+    margin-left: 25rem;
+    margin-right: 10rem;
+    margin-top: 10rem;
+    margin:auto;
+}
+section img{
+    width: 0px;
+    flex-grow:1 ;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+section img:hover{
+    cursor: auto;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+    /*contacto*/
+.contacto{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    font-family: var(--fuente-principal), monserrat;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    text-align: center;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+.redes_sociales{
+    display: flex;
+    box-sizing: border-box;
+    width: 150px;
+    height: 150px;
+}
+footer{
+    text-align: center;
+    font-family: var(--fuente-secundaria);
+    font-size: 1.5rem;
+}
