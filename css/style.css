@@ -1,5 +1,4 @@
 :root{
-    --primario1:#5f0f0f;
     --primario2:#cb9b51;
     --primario3:#d2b26a;
     --primario4:#f6e27a;
@@ -9,6 +8,16 @@
     --fuente-principal:"tangerine",cursive; 
     --fuente-secundaria:"monserrat",arial;      
 }
+/*Generales*/
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem= 10px */
+}
+
+* ,*:before, *:after {
+    box-sizing: inherit;
+
+}
 
 body{
     background-color: #000000;
@@ -17,11 +26,11 @@ body{
 /*textos*/
 h1{
     font-family: var(--fuente-principal);
-    padding: 1rem;
+    padding: 1.5rem;
     text-align: center;
-    margin: 0;
+    margin: 0 auto;
     color: #AC8152;
-    font-size: 7.5rem;
+    font-size: 9rem;
  
 }
 h2{
@@ -30,17 +39,27 @@ h2{
     text-align: center;
     color: #AC8152;
 }
-/*navegacion*/
+
+/*Navegacion*/
+
 .navegacion{
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     font-family: var(--fuente-secundaria);
     font-weight: 600;
     font-size: 2rem;
     padding: 1rem;
     
 }
-
+ @media(width < 750px) {
+    .navegacion{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+    }
+     
+ }
 a{
     text-decoration: none;
     color:#ffffff;
@@ -66,20 +85,31 @@ a{
 .contenedor{
     display: flex;
     justify-content: space-evenly;
-    
-}
-    
-.contenedor_1{
-    font-family: var(--fuente-secundaria);
-    font-size: 1.5rem;
-    line-height: 2.5rem;
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
     text-align: center;
-    margin-right: 4rem;
-    margin-left: 3rem;
-    color: #ffffff;
-    width: 800px;
-    height: 600px;
-    
+}
+.contenedor_1{
+    width: 50%;
+    height: 50%;
+}
+@media(width < 750px) {
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .contenedor img {
+        width: 70%;
+        height: 70%;
+    }
+    .contenedor_1 {
+        width: 90%;
+        text-align: center;
+        text-align: justify;
+        margin: 2rem auto;
+    }
     
 }
 .titulo{
@@ -108,26 +138,17 @@ section img:hover{
     opacity: 1;
     filter: contrast(120%);
 }
-    /*contacto*/
-.contacto{
-    display: flex;
-    justify-content: space-between;
-    box-sizing: border-box;
-    font-family: var(--fuente-principal), monserrat;
-    font-size: 3rem;
-    margin-bottom: 4rem;
-    text-align: center;
-    margin-right: 2rem;
-    margin-left: 2rem;
+
+@media(width < 750px){
+    section {
+width: 80%;
+height: 80%;
+    }
 }
-.redes_sociales{
-    display: flex;
-    box-sizing: border-box;
-    width: 150px;
-    height: 150px;
-}
+
 footer{
     text-align: center;
     font-family: var(--fuente-secundaria);
-    font-size: 1.5rem;
+    font-size: 2rem;
+    margin-top: 4rem;
 }
