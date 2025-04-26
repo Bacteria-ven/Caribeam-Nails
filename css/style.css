@@ -140,10 +140,11 @@ section img:hover{
 }
 
 @media(width < 750px){
-    section {
-width: 80%;
-height: 80%;
+    section{
+        width: 200px;
+        height: 200px;
     }
+    
 }
 
 footer{
